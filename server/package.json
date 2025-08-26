@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node src/index.ts",
-     "build": "tsc && cd ../client && npm install && npm run build && cp -r dist ../server/public",
+"build": "tsc && cd ../client && npm install && npm run build",
     "start": "node dist/index.js"
   },
   "engines": {
