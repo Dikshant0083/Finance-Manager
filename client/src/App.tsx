@@ -40,14 +40,14 @@ import {
   Routes,
   Route,
   Link,
-  Navigate,
+  //Navigate,
 } from "react-router-dom";
 import { Dashboard } from "./pages/dashboard";
 import { Auth } from "./pages/auth";
 import { FinancialRecordsProvider } from "./contexts/financial-record-context";
 import {
   SignedIn,
-  SignedOut,
+  //SignedOut,
   RedirectToSignIn,
   UserButton,
   useAuth,
