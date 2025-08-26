@@ -22,12 +22,11 @@ mongoose
 app.use("/api/financial-records", financialRecordRouter);
 
 // Serve frontend build
-app.use(express.static(path.join(__dirname, "../client/dist")));
+app.use(express.static(path.join(__dirname, "../public")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+  res.sendFile(path.join(__dirname, "../public/index.html")); 
 });
-
 
 app.listen(port, () => {
   console.log(`Server Running on Port ${port} http://localhost:${port}`);
