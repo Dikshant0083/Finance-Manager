@@ -19,7 +19,7 @@ mongoose
   .catch((err) => console.error("Failed to Connect to MongoDB:", err));
 
 // ✅ Use router only once
-app.use("/api/financial-records", financialRecordRouter);
+app.use("https://finance-manager-3.onrender.com/api/financial-records", financialRecordRouter);
 
 // Serve frontend build
 app.use(express.static(path.join(__dirname, "../public")));
