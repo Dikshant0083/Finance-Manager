@@ -20,9 +20,7 @@ interface FinancialRecordsContextType {
 }
 
 export const FinancialRecordsContext = createContext<
-  FinancialRecordsContextType | undefined
->(undefined);
-
+  FinancialRecordsContextType | undefined>(undefined);
 export const FinancialRecordsProvider = ({
   children,
 }: {
